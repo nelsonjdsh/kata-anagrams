@@ -12,5 +12,5 @@ test('Number Input', () => {
 });
 
 test('List Input', () => {
-    expect(() => AnagramSearch(list)).toThrow(Error)
+    expect(AnagramSearch(list)).toStrictEqual({"acdmooprtu": ["computador"], "aems": ["mesa"], "deopr": ["pedro"], "elnnos": ["nelson"]})
 });
